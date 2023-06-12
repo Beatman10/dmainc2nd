@@ -29,7 +29,9 @@ printf("this is what changed for rebase");
     printf("\n");
 
     // Free the allocated memory
+    if(numbers!=NULL){
     free(numbers);
+numbers=NULL;
 
     return 0;
 }
