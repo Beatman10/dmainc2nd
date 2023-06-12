@@ -14,7 +14,7 @@ int main() {
         printf("Memory allocation failed. Exiting...\n");
         return 1;
     }
-
+printf("this is what changed for rebase");
     // Read integers from the user
     printf("Enter %d integers:\n", n);
     for (int i = 0; i < n; i++) {
@@ -29,8 +29,10 @@ int main() {
     printf("\n");
 
     // Free the allocated memory
+    if(numbers!=NULL){
     free(numbers);
-
+    numbers=NULL;
+    } 
     return 0;
 }
 
